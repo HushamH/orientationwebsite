@@ -1,0 +1,11 @@
+{% extends "orientationsite/index.html" %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row">
+	<h1>Thank you for registering!</h1>
+	<p> We can't wait to see you September for one of the most memorable experiences of our lives! Your confirmation number is: {{ stripe_id }} . Please keep checking the site to get all of the latest updates on Orientation 2015!</p>
+</div>
+
+{% endblock %}

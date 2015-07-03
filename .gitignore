@@ -2,5 +2,4 @@ db.sqlite3
 __pycache__
 orientationsite.sublime-workspace
 *.pyc
-orientationsite
 orientationsite/ignore_directory

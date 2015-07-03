@@ -1,0 +1,665 @@
+
+
+/* ==========================================================================
+   Hesham's custom styles
+   ========================================================================== */
+
+body {
+	margin:0;
+	padding:0;
+}
+video#bgvid {
+			position: fixed; right: 0; bottom: 0;
+			min-width: 100%; min-height: 100%;
+			width: auto; height: auto; z-index: -100;
+			background-size: cover;
+		}
+
+.container {
+	display:table;
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+.navbar-custom {
+	background-color:#ffffff;
+  	border-radius:0;
+  	color:#000;
+  	height:100px;
+  	padding-top:30px;
+  	font-size:100%;
+}
+  
+.navbar-custom .navbar-nav > li > a {
+    font-family:Helvetica;
+    font-weight:300;
+  	color:#111;
+  	padding-left:30px;
+  	padding-right:30px;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #000;
+    background-color:#fff;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color:#fff;
+}
+
+.navbar-custom .navbar-brand {
+  	color:#eeeeee;
+  	position: absolute;
+  	z-index:10;
+    left: 50%;
+    margin-left: -80px !important;  /* 50% of your logo width */
+    display: block;
+    padding-left:0px !important;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#eeeeee;
+}
+.navbar-custom .icon-bar {
+  	background-color:#33aa33;
+}
+
+#text {
+	font-family: 'Raleway', sans-serif;
+	color:white;
+	text-align:center;
+	display:table-cell;
+	vertical-align: middle;
+}
+
+#maintext {
+	font-size:800%;
+	font-weight:900;
+}
+
+#subtext {
+	font-size:120%;
+	font-weight:200;
+}
+
+#homeLnk {
+	padding-left:0px !important;
+}
+
+#teamLnk {
+	margin-right:160px;
+}
+
+#blankLnk {
+  margin-right: -40px !important;
+}
+
+#mediaLnk {
+  position:relative;
+/*  left:-40px;*/
+}
+
+#contactLnk {
+  position:relative;
+/*  left:-40px;*/
+}
+
+#regLnk {
+  position:relative;
+/*  left:-40px;*/
+}
+
+
+#brandLogo {
+  position:relative;
+  top:-50px;
+  left:5px;
+  height:600%;
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.bigContainer {
+  display: block;
+  margin: 0 auto;
+  max-width:1600px;
+  max-height:1900px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 750px;
+}
+
+.pageButton {
+	height:300px; 
+	background-size:cover;
+
+}
+.firstslide .img {
+	position: absolute;
+	top:200px;
+}
+.buttonRow {
+	clear:both;
+  margin-bottom:0px;
+}
+
+#bgPageSelect {
+	background-color:#333333;
+/*	margin-top:20px;
+*/}
+
+#infoButton{
+	background-image:url('../img/infobuttonu.jpg');
+}
+
+#infoButton:hover {
+	background-image:url('../img/infobuttonh.jpg');
+}
+
+#teamButton{
+	background-image:url('../img/teambuttonu.jpg');
+}
+
+#teamButton:hover {
+	background-image:url('../img/teambuttonh.jpg');
+}
+
+#contactButton {
+	background-image:url('../img/contactbuttonu.jpg');
+}
+
+#contactButton:hover {
+	background-image:url('../img/contactbuttonh.jpg');
+}
+
+#scheduleButton {
+	background-image:url('../img/schedulebuttonu.jpg');
+}
+
+#scheduleButton:hover {
+	background-image:url('../img/schedulebuttonh.jpg');
+}
+
+#mediaButton {
+	background-image:url('../img/mediabuttonu.jpg');
+}
+
+#mediaButton:hover {
+	background-image:url('../img/mediabuttonh.jpg');
+}
+
+#registerButton {
+	background-image:url('../img/registerbuttonu.jpg');
+}
+
+#registerButton:hover {
+	background-image:url('../img/registerbuttonh.jpg');
+}
+
+/* CUSTOMIZE THE BLURB
+-------------------------------------------------- */
+
+#blurb{
+  height:720px;
+  width:100%;
+  background-image:url('../img/bgblurb.jpg');
+  color:white;
+  font-family:courier;
+}
+
+#blurbDark{
+  z-index:1;
+  margin:0 auto;
+  height:720px;
+  width:60%;
+  background-color:rgba(48, 48, 48, 0.8);
+  text-align:justify;
+  text-justify: inter-word;
+}
+
+#blurbText{
+  padding-top:20px;
+  margin:0 auto;
+  width:70%;
+  height:620px;
+}
+#welcomeTitle {
+  font-size:140%;
+  font-weight:100;
+}
+
+#blurbText > p {
+  font-size:90%;
+}
+
+.cd {
+  width:100%;
+  height:500px;
+  background-image:url('../img/countdownbg.jpg');
+  text-align:center;
+}
+
+#countdown {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color:white;
+  font-size:600%;
+  font-family:headLiner;
+}
+/* CUSTOMIZE THE INFO PAGE
+-------------------------------------------------- */
+
+#aboutUC {
+  margin:80px auto;
+  width:80%;
+}
+
+.pull-right {
+  float:right!important;
+  margin-left:10px;
+  margin-bottom:5px;
+}
+
+.pull-left {
+  float:left!important;
+  margin-right:15px;
+  margin-bottom:5px;
+}
+
+.center-txt {
+  text-align:center;
+}
+
+#maps {
+  max-width:1200px;
+}
+
+
+
+/* CUSTOMIZE THE MEDIA PAGE
+-------------------------------------------------- */
+
+#mediagallery {
+  background-image:url('../img/mediapage/bg.jpg');
+  background-size:cover;
+}
+
+/* CUSTOMIZE THE CONTACT PAGE
+-------------------------------------------------- */
+
+#contactPg {
+  width:100%;
+  height:100%;
+  background-image:url('../img/contact.jpg');
+  background-size:cover;
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight:200;
+}
+
+#contactPg > h1 {
+  margin-top:100px;
+  color:white;
+  font-size:1200%;
+}
+
+#underline-blk {
+  margin:-10px auto;
+  height:30px;
+  width:60%;
+  background-color:white;
+}
+
+/* CUSTOMIZE THE TEAM PAGE
+-------------------------------------------------- */
+
+.box {
+  cursor: pointer;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+}
+
+.box img {
+  position: absolute;
+  left: 0;
+  margin:0 20px;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.box .overbox {
+  /*background-color: #1cbbb4;*/
+  background-size:cover;
+  background-position:left;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+  width: 280px;
+  height: 450px;
+  padding: 30px 20px;
+}
+
+.box:hover .overbox { opacity: 1; }
+
+.box .overtext {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+
+
+.box .title {
+  font-size: 1.1em;
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+  margin-bottom:8px;
+}
+
+.box .title > h6 {
+  color:#fff1bf !important;
+  padding:0px;
+  margin:0px;
+  margin-bottom:2px;
+}
+
+.box:hover .title,
+.box:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+#execTeamContainer {
+  margin:0 auto;
+  max-width:1300px;
+}
+
+.coChairRow {
+  width:100%;
+  margin-top:50px;
+  margin-bottom:20px;
+}
+
+.execRow {
+  margin-bottom:20px;
+  float:none !important;
+}
+.execpics {
+  margin: 0 auto;
+}
+
+.execpic {
+  width:300px;
+}
+
+.leaf {
+  width:70px;
+  margin-top:20px;
+}
+
+.leaf1 {
+  width:70px;
+  margin-top:14px;
+}
+
+.titleRow {
+  position:absolute;
+  height:100%;
+}
+
+.rightLeaf {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.titleText {
+  font-family:headLiner;
+  font-size:500%;
+  margin-bottom:-10px;
+}
+.titleText1 {
+  font-family:headLiner;
+  font-size:425%;
+  margin-bottom:-10px;
+}
+
+.text-muted {
+  color:green !important;
+}
+
+#schedulePage {
+  max-width:100%;
+  height:auto;
+}
+
+.footer-distributed{
+  background-color:#ffffff;
+
+}
+
+.footer-distributed .footer-left p{
+  color:  #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-motto{
+  color:  #8d9093;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+  font-size:18px;
+  font-weight: bold;
+  color:  #ffffff;
+  padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.footer-distributed .footer-right{
+  float: right;
+  max-width: 180px;
+}
+
+.footer-left > a {
+  color:#cccccc;
+}
+
+.footer-left > a:hover {
+  color:#bbbbbb;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    text-align: center;
+  }
+
+  .footer-distributed .footer-right{
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer-left p.footer-links{
+    line-height: 1.8;
+  }
+}
+
+
+
+.footer-basic-centered .footer-company-motto{
+  color:  #8d9093;
+  font-size: 24px;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+
+}
+
+.footer-distributed .footer-links{
+  list-style: none;
+  font-weight: bold;
+  color:  #ffffff !important;
+  padding: 35px 0 23px;
+  margin: 0px 0px 6px;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  text-decoration: none;
+  color: inherit;
+
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+  .footer-basic-centered{
+    padding: 35px;
+  }
+
+  .footer-basic-centered .footer-company-motto{
+    font-size: 18px;
+  }
+
+  .footer-basic-centered .footer-company-name{
+    font-size: 12px;
+  }
+
+  .footer-basic-centered .footer-links{
+    font-size: 14px;
+    padding: 25px 0 20px;
+  }
+
+  .footer-basic-centered .footer-links a{
+    line-height: 1.8;
+  }
+}
+
+.footie {
+  padding-top:20px;
+  width:100%;
+  font-size:400%;
+  color:#111; 
+}
+
+.footie > a {
+  color:#cccccc;
+  margin:0 10px;
+}
+
+.footie > p {
+  margin-top:0px;
+}
+
+/* CUSTOMIZE THE REGISTRTATION PAGE
+-------------------------------------------------- */
+
+#regForm {
+  max-width:1000px;
+  margin:0 auto;
+}
+
+@media only screen and (max-width:767px){
+    .leaf {
+    margin-top:-40px;
+  }
+}
+@media only screen and (min-width:768px){
+}
+@media only screen and (min-width:992px){
+}
+@media(min-width:1200px){}
+
+@font-face {
+    font-family: brushFont;
+    src: url('../fonts/BRUSHED.TTF');
+}
+
+@font-face {
+    font-family:headLiner;
+    src: url(../fonts/HeadlinerNo.45 DEMO.TTF);
+}
+
+@font-face {
+    font-family: glyph;
+    src: url('../fonts/glyphicons-halflings-regular.TTF');
+}
+
+
+
+
+

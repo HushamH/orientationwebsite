@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+
+{% block head_title %} Into the Wild {% endblock %}
+
+{% block content %}
+  <div class="bigContainer">
+  <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="{% static 'img/carousel/regibanner.jpg'%}" alt="First slide" style="max-height:100%">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <div class="item cd">
+          <!-- <img class="second-slide" src="{% static 'img/slide2.jpg' %}" alt="Second slide"> -->
+          <p id="countdown"></p>
+
+          <div class="container"> 
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="item">
+          <img class="third-slide" src="{% static 'img/orientationcrowd.jpg' %}" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+    <!-- BLURB SELECT
+    ================================================== -->
+
+    <div id="blurb" class="container-fluid">
+      <div id="blurbDark">
+        <div id="blurbText">
+          <div id="blurbTitle" style="width:100%; text-align:center;">
+            <span id='welcomeTitle'>WELCOME TO THE UC JUNGLE!</span>
+          <hr />
+          </div>
+          <p>
+University College Orientation has been, and continues to be a week long event where incoming first year students are introduced to UC (University College) and the University of Toronto as a whole. Where they can take part in our school spirit and learn about the resources available to them that encompass academics, social needs, sexual education, mental health and so much more! First years will be able to interact with each other, upper years, alumni and professors to answer any questions they might have, and to make the transition into university as smooth as possible! 
+<br />
+<br />
+Our team is so excited for Orientation to begin, and to officially meet you! Soon you will be entering the big world of U of T. Just like the jungle, it can be a scary place until you have the necessary resources to survive and thrive. We hope you are able to take away only positive memories and experiences that will last you a lifetime, and help you succeed throughout your time at U of T and beyond!
+<br />
+<br />
+Similar to all of the species that work together to make the jungle the unifying ecosystem that it is, YOU as frosh and all of your diverse abilities, personalities and talents make up a place where all of our uniqueness comes together to make our home; UC.
+<br />
+<br />
+Being apart of the UC community means being apart of an inclusive and safe environment where everyone is celebrated as our diversity comes together to build the heartbeat of our UC Jungle.
+<br />
+<br />
+We welcome you –into the wild- to explore the endless opportunities to develop and learn about all of the essentials of university, while experiencing the most memorable week of your life!
+<br />
+<br />
+See you in September! 
+          </p>
+          <p>-- Rochelle & Kimia,
+UC Orientation Co-Chairs 2015
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM SELECT
+    ================================================== -->
+    <div id="pageSelect">
+      <div id="bgPageSelect" class="container-fluid">
+          <div class="row buttonRow">
+            <a href="{% url 'info' %}"><div id="infoButton" class="col-md-4 pageButton"></div></a>
+            <a href="{% url 'team' %}"><div id="teamButton" class="col-md-4 pageButton"></div></a>
+            <a href="{% url 'contact' %}"><div id="contactButton" class="col-md-4 pageButton"></div></a>
+          </div>
+          <div class="row buttonRow">
+            <a href="{% url 'schedule' %}"><div id="scheduleButton" class="col-md-4 pageButton"></div></a>
+            <a href="{% url 'media' %}"><div id="mediaButton" class="col-md-4 pageButton"></div></a>
+            <a href="{% url 'register' %}"><div id="registerButton" class="col-md-4 pageButton"></div></a>
+          </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
